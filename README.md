@@ -2,12 +2,12 @@
 
 This exercise is designed to practice the use of HTML and CSS to create a dashboard. The dashboard will present analysis completed in another project.
 
-#### Context about past project###
+#### Context about past project
 This project was designed to study the relationship between the location of a particular city and its climate. In order to remove potential bias in the selection process, 500+ cities were selected on random using an existing Python library (https://pypi.python.org/pypi/citipy). Weather data for the selected cities was pulled using the OpenWeather Map API (https://openweathermap.org/api) on February, 9th 2021.
 
 Once assembled, the dataset was used to create several plots using Matplotlib. These plots focused on factors such as maximum temperature, cloudiness, humidity, and wind speed, and compared them to the given city's latitude. The goal being to display trends across the globe and identify the correlation between the latitude and a given factor.
-####################################
 
+#### Dashboard Requirements
 The dashboard created in this exercise should provide the source data (Resources/cities.csv) and visualizations created as part of the weather analysis, as well as explanations and descriptions of any trends and correlations witnessed. The dashboard will include 7 pages in total and a means to navigate between them. The page breakdown and requirements are as follows:
 
 * A [landing page](#landing-page) containing:
@@ -31,4 +31,4 @@ Navigation - Each page must include a navigation menu that meets the following g
 * Has the name of the site on the left of the nav which allows users to return to the landing page from any page.
 * Contains a dropdown menu on the right of the navbar named "Plots" that provides a link to each individual visualization page.
 * Provides two more text links on the right: "Comparisons," which links to the comparisons page, and "Data," which links to the data page.
-* Is responsive (using media queries). The nav must have similar behavior as the screenshots ["Navigation Menu" section](#navigation-menu) (notice the background color change).
+* Is responsive (using media queries). The nav must turn into a hamburger navigation for smaller screen sizes and the background color must also change in response to the screen size.
