@@ -55,8 +55,7 @@
     .img_summary{
         width: 100%;
         max-width:500px;
-        margin-bottom:5px;
-        margin-right:5px;
+        margin-right:15px;
         margin-left:5px; 
         float:left;
         border: 1px solid black;
@@ -69,7 +68,7 @@
         margin:5px;
         margin-right: 5px;
         padding: 5 px;
-        padding-right:5px;
+        padding-right:15px;
     }
 
     @media all and (min-width: 768px) {
@@ -77,12 +76,15 @@
             background: lightgray;
             margin-bottom:20px;
         }
+        
         .main_box{
             position:relative;
             top:60px;
             left:30px;
             height:auto;
+            padding-right:15px
         }
+        
         .one_box{        
             height: auto;
             background:white;
@@ -92,6 +94,7 @@
             padding-right:10px;
             overflow:hidden;
         }
+
         .side_box{
             position:relative;
             top: 18px;
@@ -105,6 +108,7 @@
         margin: 5px;
         margin-right:10px;
         font-size: 16px;
+        padding-right:5px;
     }
 
     .side_box{
