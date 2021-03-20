@@ -10,8 +10,8 @@
 
 <body>
     <nav class="navbar navbar-expand-md navbar-dark" style="background-color: #166d70;">
-        <a class="navbar-brand mb-1 mx-2 h1" href="index.html">Latitude</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <a class="navbar-brand mb-1 mx-3 h1" href="index.html">Latitude</a>
+        <button class="navbar-toggler mx-3" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
@@ -41,27 +41,32 @@
                 <h2>Summary - Weather Analysis</h2>
                 <br>
                 <div><img src="Assets/TemperatureInWorldCities.png" class = "img_summary" alt="Latitude vs. Max Temperature"></div>
-                <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. 
-                    The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, 
-                    content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem 
-                    Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. 
-                    Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>            
-            </div>
+                    <p>This project was designed to study the relationship between the location of a particular city and its climate. 
+                        In order to remove potential bias in the selection process, 500+ cities were selected on random using an 
+                        existing Python library <a href = "https://pypi.python.org/pypi/citipy">(citypy)</a>. Weather data for the 
+                        selected cities was pulled using the <a href="https://openweathermap.org/api">OpenWeather Map API</a> on 
+                        February, 9th 2021. <br><br> Once assembled, the dataset was used to create several plots using Matplotlib. 
+                        These plots focused on factors such as maximum temperature, cloudiness, humidity, and wind speed, and compared 
+                        them to the given city's latitude. The goal being to display trends across the globe and identify the correlation 
+                        between the latitude and a given factor. This site provides the source data and visualizations created as part of 
+                        the analysis, as well as explanations and descriptions of any trends and correlations witnessed.<br><br>
+                    </p>            
+                </div>
             <div class="col-12 col-md-4">
                 <div class = "row side_box mt-md-5">
                     <h3>Visualizations</h3>
                     <div class="col-3 col-md-6">
-                        <a href="temp_page.html"><img src="Assets/TemperatureInWorldCities.png" width= '100%' alt="Latitude vs. Max Temperature"></a>             
+                        <a href="temp_page.html"><img src="Assets/TemperatureInWorldCities.png" class = "img_visual" width = 100% alt="Latitude vs. Max Temperature"></a>             
                     </div>
                     <div class="col-3 col-md-6">
-                        <a href="cloudiness_page.html"><img src="Assets/CityLatitude_vs_Cloudiness.png" width= '100%' alt="Latitude vs. Cloudiness"></a>                                    
+                        <a href="cloudiness_page.html"><img src="Assets/CityLatitude_vs_Cloudiness.png" class = "img_visual" width = 100% alt="Latitude vs. Cloudiness"></a>                                    
                     </div>
                     <div class="w-100 d-none d-md-block"></div>
                     <div class="col-3 col-md-6">
-                        <a href="humidity_page.html"><img src="Assets/CityLatitude_vs_Humidity.png" width= '100%' alt="Latitude vs. Humidity"></a>            
+                        <a href="humidity_page.html"><img src="Assets/CityLatitude_vs_Humidity.png" class = "img_visual" width = 100% alt="Latitude vs. Humidity"></a>            
                     </div>
                     <div class="col-3 col-md-6">
-                        <a href="windspeed_page.html"><img src="Assets/CityLatitude_vs_WindSpeed.png" width= '100%' alt="Latitude vs. Wind Speed"></a>            
+                        <a href="windspeed_page.html"><img src="Assets/CityLatitude_vs_WindSpeed.png" class = "img_visual" width = 100% alt="Latitude vs. Wind Speed"></a>            
                     </div>                    
                 </div>            
             </div>
