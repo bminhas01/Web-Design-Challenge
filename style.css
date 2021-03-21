@@ -1,3 +1,4 @@
+    /* Formatting for all headings (h2) */
     h2{
         color:#0a7575;
         padding-bottom:15px;
@@ -8,7 +9,7 @@
         font-weight:bold;
     }
 
-
+    /* Formatting for all headings (h3) */
     h3{
         color:#0a7575;
         padding-bottom:15px;
@@ -19,6 +20,7 @@
         font-weight:bold;
     }
 
+    /* Formatting for image headings on comparison page */
     .h3_heading{
         color:#0a7575;
         font-family: Arial, Helvetica, sans-serif;
@@ -27,6 +29,7 @@
         text-align: center;      
     }
 
+    /* Formatting for images in visualization pane - image relevant to page topic */
     .img_page {
     height: 100%;
     object-fit: contain;
@@ -36,6 +39,7 @@
     padding-top:10px;
     }
 
+    /* Formatting for images in visualization pane - images not relevant to page topic*/
     .img_visual {
     height: 100%;
     object-fit: contain;
@@ -45,12 +49,14 @@
     padding-top:10px;
     }
 
+    /* Hover formatting - images in visualization pane not relevant to page topic */
     .img_visual:hover{
         -moz-box-shadow: 0 0 5px #ccc;
         -webkit-box-shadow: 0 0 5px #ccc;
         box-shadow: 0 0 5px #ccc;
     }
 
+    /* Formatting for images on comparison page */
     .img_comparison{
         display:block;
         width: 100%;
@@ -60,12 +66,14 @@
         padding-bottom:50px;
     }
 
+    /* Hover formatting - images on comparison page */
     .img_comparison:hover{
         -moz-box-shadow: 0 0 5px #ccc;
         -webkit-box-shadow: 0 0 5px #ccc;
         box-shadow: 0 0 5px #ccc;
     }
 
+    /* Image enlarged and included in text - topic of page */
     .img_focus{
         display:block;
         width: 100%;
@@ -76,6 +84,7 @@
         padding: 5px;
     }
 
+    /* Image included in text on summary page */
     .img_summary{
         width: 100%;
         max-width:500px;
@@ -86,6 +95,7 @@
         padding: 5px;
     }
 
+    /* Background formatting for main text on page */
     .main_box{
         height: auto;
         background:white;
@@ -95,12 +105,15 @@
         padding-right:15px;
     }
 
+    /* Media Queries - what happens when the screen width changes */
     @media all and (min-width: 768px) {
+        /* change in background color */
         body {
-            background: lightgray;
+            background: rgb(224, 226, 226);
             margin-bottom:20px;
         }
         
+        /* reformatting main body of text (box) on page */
         .main_box{
             position:relative;
             top:60px;
@@ -109,6 +122,7 @@
             padding-right:15px
         }
         
+        /* formatting for pages where there is only one large piece of information - comparison and data pages */
         .one_box{        
             height: auto;
             background:white;
@@ -119,6 +133,7 @@
             overflow:hidden;
         }
 
+        /* formatting for visualization pane */
         .side_box{
             position:relative;
             top: 18px;
@@ -127,6 +142,7 @@
         
     }
 
+    /* formatting for all p tags */
     p{
         text-align:justify;
         margin: 5px;
@@ -135,6 +151,7 @@
         padding-right:5px;
     }
 
+    /* default formatting for visualization pane */
     .side_box{
         height:auto;
         background:white;
@@ -144,21 +161,25 @@
         padding-bottom: 5px;
     }
 
+    /* border for image in visualization pane that is relevant to page */
     .selected_box{
         border:2px solid teal;
         overflow:hidden;
     }
 
+    /* formatting for all td tags */
     td {
         border: 1px solid #ddd;
         padding: 8px;
     }
 
+    /* formatting for all th tags */
     th {
         border: 1px solid #ddd;
         padding: 8px;
     }
 
+    /* formatting for even rows in table */
     tr:nth-child(even)
     {background-color: #e3eeee;
     }
